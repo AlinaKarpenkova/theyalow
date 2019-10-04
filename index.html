@@ -16,7 +16,7 @@
             <div class="container">
                 <div class="logo-container">
                     <img src="assets/images/logo.svg" alt="" height="83" width="83">
-                    <p class="logo-text">THEYALOW</p>
+                    <h1 class="logo-text">THEYALOW</h1>
                 </div>
                 <div class="main-nav">
                     <div class="main-nav-container">
@@ -44,14 +44,17 @@
             <div class="container banner-container">
                 <div>
                     <video poster="assets/images/video.png" height="327" width="549"></video>
-                    <!-- <div id="video-controls">
-                        <button type="button" id="play-pause"><img src="assets/images/playbutton.svg" width="68"
-                                height="68"></button>
-                        <input type="range" id="seek-bar" value="0">
-                        <button type="button" id="mute">Mute</button>
-                        <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
-                        <button type="button" id="full-screen">Full-Screen</button>
-                    </div> -->
+                    <div class="play">
+                        <a type="button" href="" id="play-circle"><img src="assets/images/playbutton.svg" width="68"
+                                height="68"></a>
+                    </div>
+                    <div id="video-controls">
+                        <a class="play-square" href=""><img src="assets/images/sqareplaybutton.svg" height="26"
+                                width="26" alt="Play"></a>
+                        <progress class="progress" max="100" value="45"></progress>
+                        <a class="volume" href=""><img src="assets/images/volume.svg" height="17" width="17"
+                                alt="Mute/Unmute"></a>
+                    </div>
                 </div>
                 <div class="banner-text">
                     <p>THE COOL</p>
@@ -90,13 +93,17 @@
             </div>
             <div class="container">
                 <div class="monkey-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                    <a class="monkey-plus" href=""><img src="assets/images/plus.svg" height="11" width="11" alt="+"></a>
                 </div>
 
                 <div class="monkey">
-                    <video poster="assets/images/monkey.svg"></video></div>
+                    <video poster="assets/images/monkey.svg" height="233"></video></div>
                 <div class="twitter">
+                    <p class="twitter-text">22</p>
                     <img src="assets/images/twitter.svg" alt=""></img>
+                    <a class="twitter-plus" href=""><img src="assets/images/plus.svg" height="11" width="11"
+                            alt="+"></a>
                 </div>
             </div>
 
@@ -104,27 +111,65 @@
                 <p>25</p>
                 <p>April</p>
             </div>
+
+            <div class="scroll-container">
+                <div class="current-position"></div>
+            </div>
         </section>
     </div>
 
 
-    <section class="last_section">
-        <div class="circle"><img src="assets/images/circle.png" alt="">ITS FREE</img></div>
-        <div class="monitor"><img src="assets/images/monitor.png" alt=""></img></<div>
-            <div class="tablet"><img src="assets/images/tablet.png" alt=""></img></div>
-            <div class="data"><img src="assets/images/phone.png" alt=""></img></div>
+    <section class="pre-footer">
 
-            <ul class="list">
-                <li>Sed up perspiciatis unde omnis</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
-                <li>Sed up perspiciatis unde omnis</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
-            </ul>
+        <div>
+            <p class="description">Lorem ipsum dolor sit amet</p>
+        </div>
+
+        <div class="container">
+            <div class="gadgets">
+                <div class="circle">
+                    <img src="assets/images/circleformonitor.svg" alt="">
+                    <p>it's 100% free</p>
+                </div>
+
+
+
+                <div class="monitor">
+                    <img src="assets/images/monitor.svg" alt="">
+                </div>
+
+
+                <div class="tablet">
+                    <img src="assets/images/screen.svg" alt="">
+                </div>
+
+                <div class="phone">
+                    <img src="assets/images/phone.svg" alt="">
+                </div>
+            </div>
+
+            <div class="list">
+                <ul>
+                    <li>Sed up perspiciatis unde omnis</li>
+
+                    <li>Lorem ipsum dolor sit amet, con-<br>
+                        sectetur adipiscing</li>
+
+                    <li>Sed up perspiciatis unde omnis</li>
+
+                    <li>Lorem ipsum dolor sit amet, con-<br>
+                        sectetur adipiscing</li>
+                </ul>
+            </div>
+        </div>
+
+
     </section>
 
     <footer>
-        <div>
-            <img src="assets/images/logo_52x52.png" alt="THEYALOW">THEYALOW</img>
+        <div class="container">
+            <img src="assets/images/logo.svg" alt="" width="52" height="52">
+            <p>THEYALOW</p>
 
         </div>
     </footer>
