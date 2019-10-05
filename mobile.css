@@ -1,50 +1,51 @@
-@media (min-width:641px) {
-
+@media (max-width: 640px) {
 
     html,
     body {
-        margin: 0px auto;
+        margin: 0;
         padding: 0;
-
-        max-width: 1300px;
-
+        max-width: 640px;
         background-color: rgba(242, 242, 242, 0.95);
 
     }
 
     .container {
-        width: 1020px;
+        width: 640px;
         display: flex;
         padding: 0;
-        margin: 0px auto;
+        margin: 0;
     }
 
     .header {
-        margin: 0px auto;
+        margin: 0;
         padding: 0;
-        height: 169px;
+        height: 63px;
     }
 
     .banner-wrapper {
-        background-image: url('assets/images/banner-background.svg');
-        height: 566px;
+
+
+        height: 390px;
+    }
+
+    .banner-container video {
+        width: 640px !important;
     }
 
     .main-nav {
-        height: 41px;
-        width: 454px;
+        height: 63px;
+        width: 456px;
         font-family: "Segoe WP",
             Arial,
             sans-serif;
-        font-size: 17px;
+        font-size: 19px;
         letter-spacing: 0px;
         color: #9b7d08;
         background-color: #F5C506;
         text-align: center;
         display: flex;
-        margin: 70px 0px auto auto;
-        box-shadow: -5px -5px rgba(245, 197, 6, 0.3),
-            -10px -10px rgba(245, 197, 6, 0.3);
+        margin: 0;
+        justify-content: center;
     }
 
     .main-nav-text {
@@ -63,36 +64,35 @@
     .main-nav-container {
         display: flex;
         align-items: center;
+        justify-content: center;
+        width: 152px;
     }
 
     .main-nav-container:first-child {
         border-right: 1px solid #9b7d08;
-        width: 150px;
-        padding-left: 39px;
     }
 
     .main-nav-container:nth-child(2) {
         border-right: 1px solid #9b7d08;
-        width: 147px;
-        padding-left: 15px;
-    }
-
-    .main-nav-container:last-child {
-        width: 147px;
-        padding-left: 17px;
     }
 
     .logo-container {
+        height: 63px;
+        width: 186px;
+        background-color: #5B5B5B;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         text-align: center;
     }
 
+    .logo-container img {
+        height: 39px;
+        width: 39px
+    }
+
     .logo-text {
-        margin: 40px 4px;
-        padding-top: 10px;
-        font-size: 41px;
+        font-size: 20px;
         letter-spacing: 0px;
         color: rgb(255, 255, 255);
         font-family: 'Lucida Sans',
@@ -102,18 +102,24 @@
         text-transform: uppercase;
         line-height: 1.2;
         text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.42);
+        padding-top: 2px;
+        margin-left: 5px;
     }
 
     .banner {
         display: flex;
-        justify-content: space-between;
         align-items: center
     }
 
     .banner-container {
+        height: 327px;
         justify-content: space-between;
         align-items: center;
-        padding: 0px 118px;
+    }
+
+    .video-desktop {
+        visibility: hidden;
+        display: none;
     }
 
     .banner-container div:first-child {
@@ -121,10 +127,14 @@
     }
 
     .banner-arrow {
+        visibility: hidden;
+        display: none;
         padding-bottom: 8px;
     }
 
     .banner-text {
+        visibility: hidden;
+        display: none;
         font-size: 63px;
         font-family: "Asap",
             Arial,
@@ -152,13 +162,16 @@
 
 
     .advantages {
-        height: 212px;
-        padding: 0px 140px;
-        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
+        align-items: center;
+        height: 174px;
+        box-shadow: 0px -5px 0px 0px rgba(255, 255, 255, 0.4),
+            0px -11px 0px 0px rgba(255, 255, 255, 0.4);
         position: relative;
     }
 
     #video-controls {
+        width: 549px;
+        margin: 0px auto;
         bottom: 125px;
         position: relative;
         display: flex;
@@ -166,16 +179,19 @@
         align-items: center;
     }
 
-    .video-mobile {
-        visibility: hidden;
-        display: none;
-    }
-
     .play {
         position: relative;
-        left: 242px;
+        left: 292px;
         bottom: 200px;
         cursor: pointer;
+    }
+
+    .monkey-play {
+        position: relative;
+        left: 134px;
+        bottom: 140px;
+        cursor: pointer;
+
     }
 
     .play-square {
@@ -211,8 +227,8 @@
     }
 
     .advantages-item {
-        width: 340px;
-        height: 212px;
+        width: 216.5px;
+        height: 154px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -233,28 +249,31 @@
         line-height: 1.2;
         text-align: center;
         margin-top: 10px;
-        margin-bottom: 35px;
+        margin-bottom: 10px;
     }
 
     .twitter {
         height: 233px;
-        width: 329px;
-        background-color: #EC9E03;
+        width: 320px;
+        background-color: #F5C507;
         display: flex;
         justify-content: center;
     }
 
     .monkey {
-        height: 233px;
-        width: 375px;
+        height: 232px;
+        width: 265px;
+        margin: 10px 10px 10px 0px;
+
     }
 
     .monkey-text {
-        height: 233px;
-        width: 341px;
+        margin: 10px;
+        height: 232px;
+        width: 265px;
         padding-left: 30px;
-        font-size: 29px;
-        font-family: "Segoe WP", Arial, Helvetica, sans-serif;
+        font-size: 28px;
+        font-family: "Segoe WP", sans-serif;
         word-wrap: break-word;
         color: rgb(255, 255, 255);
         line-height: 1.308;
@@ -272,12 +291,13 @@
     .monkey-text a {
         position: relative;
         bottom: 5px;
-        left: 145px;
+        left: 120px;
         height: 11px;
     }
 
     .monkey-plus {
         height: 11px;
+
     }
 
     .monkey-plus img {
@@ -290,21 +310,21 @@
         width: 17px;
     }
 
-    .monkey-play {
-        position: relative;
-        left: 134px;
-        bottom: 140px;
-        cursor: pointer;
-
-    }
-
     .slider-container {
         flex-direction: column;
         justify-content: center;
-        height: 510px;
+        height: 485px;
+    }
+
+    .slider-container div.container {
+
+        flex-wrap: wrap;
+        height: 485px;
     }
 
     .slider-caption {
+        visibility: hidden;
+        display: none;
         font-size: 33px;
         font-family: "PTSans", Arial, Helvetica, sans-serif;
         color: rgb(255, 255, 255);
@@ -315,6 +335,8 @@
     }
 
     .twitter-plus {
+        visibility: hidden;
+        display: none;
         position: relative;
         height: 11px;
         top: 210px;
@@ -332,6 +354,8 @@
     }
 
     .twitter-text {
+        visibility: hidden;
+        display: none;
         height: 28px;
         width: 28px;
 
@@ -348,11 +372,69 @@
     }
 
     .twitter-form-chat {
-        visibility: hidden;
-        display: none;
+        width: 320px;
+        background-color: #F5C507;
+    }
+
+    .message {
+        margin-bottom: 15px;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(143, 142, 142);
+        line-height: 1.2;
+        text-align: left;
+        width: 285px;
+        height: 42px;
+    }
+
+    .message p {
+        margin: 15px 25px;
+        padding-top: 5px;
+    }
+
+    .message:first-child {
+        background-image: url("assets/images/formmessagebackground.png")
+    }
+
+    .message:not(last-child) {
+        background-image: url("assets/images/formmessagebg2.png")
+    }
+
+    .message:last-child {
+        background-image: url("assets/images/formmessagebg3.png")
+    }
+
+    .twitter-form {
+        width: 285px;
+        padding-left: 15px;
+    }
+
+    .twitter-form input {
+        width: 200px;
+        border-radius: 15px 0px 0px 15px;
+        border: 1px solid rgb(219, 154, 18);
+        padding-left: 15px;
+        height: 25px;
+        margin: 0;
+    }
+
+    .twitter-form button {
+        position: relative;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+        height: 29px;
+        border: none;
+        background-color: rgb(219, 154, 18);
+        border-radius: 0px 15px 15px 0px;
+        margin: 0px;
+        padding: 0 10px;
+        right: 10px;
     }
 
     .scroll-container {
+        visibility: hidden;
+        display: none;
         height: 13px;
         width: 890px;
         margin: 42px auto 10px;
@@ -370,7 +452,8 @@
     }
 
     .date {
-        display: flex;
+        visibility: hidden;
+        display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -402,12 +485,15 @@
     }
 
     .slider-wrapper {
-        background-image: url("assets/images/sliderbg.svg");
+        background-color: white;
     }
 
     .gadgets {
         display: flex;
         align-items: flex-end;
+        justify-content: center;
+        margin: 0px auto;
+
 
     }
 
@@ -442,18 +528,17 @@
 
     .pre-footer {
         display: flex;
-        padding-bottom: 40px;
         flex-direction: column;
         align-items: center;
         background-image: url("assets/images/gadgetsbg.png");
 
-        height: 499px;
+        height: 485px;
     }
 
     .description {
 
         position: relative;
-        font-size: 43px;
+        font-size: 36px;
         font-family: "PTSans", Arial, Helvetica, sans-serif;
         color: rgb(245, 197, 6);
         text-transform: uppercase;
@@ -461,6 +546,8 @@
     }
 
     .list {
+        visibility: hidden;
+        display: none;
         position: relative;
         left: 85px;
         top: 57px;
@@ -469,7 +556,6 @@
         color: rgb(169, 169, 167);
         line-height: 1.2;
         text-align: left;
-        display: flex;
         justify-content: right;
     }
 
@@ -497,7 +583,7 @@
 
     footer div p {
         margin: 20px 0px 20px 10px;
-        font-size: 29px;
+        font-size: 17px;
         font-family: 'Lucida Sans', sans-serif;
         line-height: 1.2;
         text-align: center;
@@ -505,5 +591,11 @@
         color: rgb(255, 255, 255);
         font-style: italic;
         text-transform: uppercase;
+    }
+
+    footer img {
+        height: 32px;
+        width: 32px;
+        margin-left: 70px;
     }
 }

@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>TheYalow</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="fonts.css">
 </head>
 
 
@@ -43,7 +45,8 @@
             </div>
             <div class="container banner-container">
                 <div>
-                    <video poster="assets/images/video.png" height="327" width="549"></video>
+                    <video class="video-desktop" poster="assets/images/video.png" height="327" width="549"></video>
+                    <video class="video-mobile" poster="assets/images/videomob.png" height="327" width="640"></video>
                     <div class="play">
                         <a type="button" href="" id="play-circle"><img src="assets/images/playbutton.svg" width="68"
                                 height="68"></a>
@@ -98,12 +101,34 @@
                 </div>
 
                 <div class="monkey">
-                    <video poster="assets/images/monkey.svg" height="233"></video></div>
+                    <video poster="assets/images/monkey.svg" height="233" width="315"></video>
+                    <div class="monkey-play">
+                        <a type="button" href=""><img src="assets/images/playbutton.svg" width="60" height="60"></a>
+                    </div>
+                </div>
                 <div class="twitter">
                     <p class="twitter-text">22</p>
                     <img src="assets/images/twitter.svg" alt=""></img>
                     <a class="twitter-plus" href=""><img src="assets/images/plus.svg" height="11" width="11"
                             alt="+"></a>
+                </div>
+
+                <div class="twitter-form-chat">
+                    <div class="chat">
+                        <div class="message">
+                            <p>Daily Mobile UI Design Inspiration #1 via @cssauthor</p>
+                        </div>
+                        <div class="message">
+                            <p>Daily Mobile UI Design Inspiration #1 via @cssauthor</p>
+                        </div>
+                        <div class="message">
+                            <p>Daily Mobile UI Design Inspiration #1 via @cssauthor</p>
+                        </div>
+                    </div>
+                    <form class="twitter-form" action="/">
+                        <input type="text">
+                        <button type="submit">Tweet</button>
+                    </form>
                 </div>
             </div>
 
